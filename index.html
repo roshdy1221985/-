@@ -38,6 +38,12 @@
 <div class="ok" id="okb">✅ التطبيق مثبّت وشغّال. الملفات بتتحفظ على جهازك وتشتغل من غير إنترنت.</div>
 <a class="unit" href="unit1.html"><div class="un">١</div><div class="ut"><b>الوحدة الأولى</b><span>المعادلات والمتباينات والدوال التربيعية</span><div class="st" id="s1"></div><div class="bar"><i id="b1"></i></div></div><div class="go">⬅</div></a>
 <a class="unit" href="unit2.html"><div class="un">٢</div><div class="ut"><b>الوحدة الثانية</b><span>الدوال: المجال والمدى ، التركيب ، المعكوس ، التحويلات</span><div class="st" id="s2"></div><div class="bar"><i id="b2"></i></div></div><div class="go">⬅</div></a>
+<a class="unit" href="unit3.html"><div class="un">٣</div><div class="ut"><b>الوحدة الثالثة: المتتاليات والمتسلسلات</b><span>الحسابية ، الهندسية ، غير المنتهية ، مسائل مركبة + عرض تفاعلي + نؤسس تفوقنا</span><div class="st" id="s3"></div><div class="bar"><i id="b3"></i></div></div><div class="go">⬅</div></a>
+<h3 style="margin:18px 6px 6px;font-family:Amiri">🎬 عروض الدروس التفاعلية</h3>
+<a class="unit" href="show_translation.html"><div class="un">🎬</div><div class="ut"><b>عرض تفاعلي: الانسحاب</b><span>تربيعية ، تكعيبية ، جذرية ، أسية ، كسرية</span></div><div class="go">⬅</div></a>
+<a class="unit" href="show_reflection.html"><div class="un">🎬</div><div class="ut"><b>عرض تفاعلي: الانعكاس</b><span>حول المحور السيني والصادي</span></div><div class="go">⬅</div></a>
+<a class="unit" href="show_stretch.html"><div class="un">🎬</div><div class="ut"><b>عرض تفاعلي: التمدد</b><span>رأسيًا وأفقيًا</span></div><div class="go">⬅</div></a>
+<a class="unit" href="show_combined.html"><div class="un">🎬</div><div class="ut"><b>عرض تفاعلي: تركيب التحويلات</b><span>خطوة بخطوة مع تتبع النقاط</span></div><div class="go">⬅</div></a>
 </div>
 <section class="empire" aria-label="منصة إمبراطورية الرياضيات">
   <div id="promo-banner">
@@ -64,7 +70,7 @@
 <div class="foot">© أ. رشدي سيد — واتساب ٩٦٦٩٠١٢٣ — جميع الحقوق محفوظة</div>
 <script>
 const hd=n=>String(n).replace(/\d/g,d=>'٠١٢٣٤٥٦٧٨٩'[d]);
-[[1,10,'quest_u1'],[2,9,'quest_u2']].forEach(([u,n,key])=>{let s=0;try{const q=JSON.parse(localStorage.getItem(key))||{};for(let i=0;i<n;i++){const r=q[i];if(r)s+=(r.seen?1:0)+(r.best>=.6?1:0)+(r.best>=.9?1:0)}}catch(e){}document.getElementById('s'+u).textContent='★ '+hd(s)+' من '+hd(n*3)+' نجمة';document.getElementById('b'+u).style.width=(s/(n*3)*100)+'%'});
+[[1,10,'quest_u1'],[2,9,'quest_u2'],[3,5,'quest_u3']].forEach(([u,n,key])=>{let s=0;try{const q=JSON.parse(localStorage.getItem(key))||{};for(let i=0;i<n;i++){const r=q[i];if(r)s+=(r.seen?1:0)+(r.best>=.6?1:0)+(r.best>=.9?1:0)}}catch(e){}document.getElementById('s'+u).textContent='★ '+hd(s)+' من '+hd(n*3)+' نجمة';document.getElementById('b'+u).style.width=(s/(n*3)*100)+'%'});
 const ua=navigator.userAgent,ios=/iPhone|iPad|iPod/.test(ua),standalone=navigator.standalone||matchMedia('(display-mode: standalone)').matches,safari=/Safari/.test(ua)&&!/CriOS|FxiOS|EdgiOS|GSA|Instagram|FBAN|FBAV|WhatsApp/.test(ua);
 if(standalone)document.getElementById('okb').style.display='block';else if(ios)document.getElementById(safari?'ios':'ios2').style.display='block';
 let dp=null;addEventListener('beforeinstallprompt',e=>{e.preventDefault();dp=e;document.getElementById('and').style.display='block'});
